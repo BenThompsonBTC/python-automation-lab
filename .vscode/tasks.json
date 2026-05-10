@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run system health summary",
+      "type": "shell",
+      "command": "python scripts/system_health_summary.py",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Python tests",
+      "type": "shell",
+      "command": "$env:PYTHONPATH='src'; python -m pytest",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Git status",
+      "type": "shell",
+      "command": "git status",
+      "problemMatcher": []
+    }
+  ]
+}
+
